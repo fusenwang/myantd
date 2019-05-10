@@ -1,0 +1,20 @@
+import React from 'react';
+class  ShoppingList extends React.Component {
+	constructor(arg) {
+		super(arg);
+	}
+	render(){
+		return(
+		 <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+				<input value={this.props.val} onChange={this.props.onTextChange}/>
+      </div>
+		);
+	}
+}
+export default ShoppingList;
